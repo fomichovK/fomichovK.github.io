@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400&family=Poppins:ital,wght@0,400;1,700&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #efefef;
+}
+a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.blockShadow {
+  box-shadow: 3px 3px 10px gray;
+  border-radius: 5px;
+  padding: 20px 40px;
+  margin: 20px 10px;
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.myFace {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.myFace img {
+  position: absolute;
+  width: 210px;
+  top: 0;
+  left: -8px;
+}
+.title {
+  text-align: center;
+}
+title p {
+  margin: 0;
+}
+.myName {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+.position {
+  font-style: italic;
+}
+.social {
+  font-size: 25px;
+}
+
+.social a {
+  padding: 5px;
+}
+.fa-linkedin {
+  color: #073883;
+}
+.fa-envelope {
+  color: black;
+}
+.fa-github-square {
+  color: rgb(102, 83, 82);
+}
+.fa-phone-square {
+  color: #0853c5;
+}
+.fa-phone-square,
+.fa-github-square,
+.fa-linkedin,
+.fa-envelope {
+  transition: 0.5s ease;
+}
+
+.fa-phone-square:hover {
+  box-shadow: 0 0 10px #0853c5;
+  transform: rotate(45deg);
+}
+.fa-github-square:hover {
+  box-shadow: 0 0 10px #0853c5;
+  transform: rotate(45deg);
+}
+.fa-linkedin:hover {
+  box-shadow: 0 0 10px #0853c5;
+  transform: rotate(45deg);
+}
+.fa-envelope:hover {
+  box-shadow: 0 0 10px #0853c5;
+  transform: rotate(45deg);
+}
+
+.skills {
+  margin-top: 40px;
+}
+.skill__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.skill__list__teh {
+  flex-grow: 1;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+}
