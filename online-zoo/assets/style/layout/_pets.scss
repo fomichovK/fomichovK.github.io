@@ -1,0 +1,224 @@
+.pets {
+  background: url(../img/palm_bottom_left.png) no-repeat,
+    url(../img/strelitzia_bottom_right.png) no-repeat;
+  background-position: bottom left, bottom right;
+  padding: 0 0 100px 0;
+
+  @include media(1645px) {
+    background: url(../img/palm_bottom_left.png) no-repeat,
+      url(../img/strelitzia_bottom_right.png) no-repeat;
+    background-position: left bottom, right bottom;
+  }
+  @include media($small_desktop) {
+    background: url(../img/palm_bottom_left_smoll.png) no-repeat,
+      url(../img/flower_top_right_smoll.png) no-repeat;
+    background-position: left bottom, right bottom;
+    padding: 0 0 144px 0;
+  }
+  @include media($tablet) {
+    background: url(../img/palm_bottom_left.png) no-repeat,
+      url(../img/strelitzia_bottom_right.png) no-repeat;
+    background-position: 6px bottom, 464px bottom;
+    padding: 0 0 105px 0;
+    background-size: 131px, 182px;
+  }
+  @include media(400px) {
+    background: url(../img/bg_mobile_left.png) no-repeat, url(../img/bg_mobile_right.png) no-repeat;
+    background-position: left bottom, right bottom;
+  }
+  @include media($mobile) {
+    padding: 0 0 64px 0;
+  }
+}
+
+.pets_wrapper {
+  position: relative;
+  flex-wrap: wrap;
+
+  @include media(1190px) {
+    justify-content: center;
+  }
+  @include media($mobile) {
+    // margin-top: 22px;
+  }
+}
+.pets_line {
+  display: flex;
+  gap: 30px;
+  overflow: hidden;
+
+  &:first-child {
+    padding-bottom: 20px;
+    @include media(1335px) {
+      padding-bottom: 90px;
+    }
+    @include media($mobile) {
+      padding-bottom: 20px;
+    }
+  }
+  @include media(400px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+  @include media($mobile) {
+    padding: 0 18px 90px 2px;
+  }
+}
+
+.pets__card {
+  position: relative;
+  border: 1px solid;
+  border-radius: 5px;
+  background: $color_light;
+  color: $color_dark;
+  max-width: 364px;
+  border: 1px solid;
+  border-color: $color_hover;
+  overflow: hidden;
+  transition: 0.5s;
+
+  img {
+    width: 100%;
+    transition: 0.5s;
+  }
+  .pet__info {
+    position: absolute;
+    bottom: 0;
+    background: gray;
+    color: $color_light;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0.8;
+    width: 100%;
+    height: 0;
+    transition: 0.5s;
+    z-index: 2;
+    h3 {
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top: 45%;
+    }
+  }
+  &:hover .pet__info {
+    height: 100%;
+  }
+  &:hover img {
+    scale: 105%;
+  }
+  .description {
+    color: $color_dark;
+    @include flexBase;
+    padding: 8px 12px 13px 16px;
+
+    @include media($tablet) {
+      padding: 1px 1px 5px 12px;
+    }
+    h3 {
+      font-weight: 500;
+      font-size: 16px;
+      text-transform: uppercase;
+      margin: 0px;
+      @include media($tablet) {
+        font-size: 12px;
+        line-height: 12px;
+      }
+    }
+    p {
+      font-weight: 300;
+      font-size: 15px;
+      @include media($mobile) {
+        font-size: 12px;
+      }
+    }
+    img {
+      width: 33px;
+      height: 37px;
+      vertical-align: middle;
+    }
+    .fishIcon {
+      width: 48px;
+    }
+  }
+
+  &:last-child {
+    @include media($tablet) {
+      display: none;
+    }
+    @include media(400px) {
+      display: block;
+    }
+    // @include media($mobile) {
+    //   display: none;
+    // }
+  }
+  @include media($mobile) {
+    &:nth-last-child(-n + 1) {
+      display: none;
+    }
+  }
+}
+.second_line {
+  padding-bottom: 0px;
+}
+.pets_button {
+  margin: 80px auto 0;
+  @include media($small_desktop) {
+    margin: 86px auto 0;
+  }
+  @include media($tablet) {
+    position: static;
+    margin: 68px auto 0;
+  }
+  @include media($mobile) {
+    margin: 24px auto 0;
+  }
+}
+.sliderLeft,
+.sliderRight {
+  cursor: pointer;
+  position: absolute;
+  top: calc(50% - 95px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  height: 62px;
+  background: $baseGrad;
+  border-radius: 100%;
+  font-size: 24px;
+  color: $color_light;
+  z-index: 2;
+  &:active {
+    background: $color_activLink;
+  }
+  @include media($tablet) {
+    top: calc(50% - 90px);
+  }
+  @include media(400px) {
+    display: none;
+  }
+}
+.sliderLeft {
+  left: -82px;
+  @include media(1335px) {
+    left: 0px;
+  }
+  @include media($small_desktop) {
+    left: 34%;
+  }
+  @include media($tablet) {
+    left: 37%;
+  }
+}
+.sliderRight {
+  right: -82px;
+  @include media(1336px) {
+    right: 0px;
+  }
+  @include media($small_desktop) {
+    right: 34%;
+  }
+  @include media($tablet) {
+    left: 53%;
+  }
+}

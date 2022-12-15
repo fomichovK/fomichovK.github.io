@@ -1,0 +1,11 @@
+@mixin flexBase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin media($screen) {
+  @media screen and (max-width: $screen) {
+    @content;
+  }
+}

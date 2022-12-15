@@ -1,0 +1,107 @@
+.wilderness {
+  background: url(../img/flower_top_right.png) no-repeat;
+  background-position: top right;
+  padding: 0 0 180px 0;
+
+  @include media(1645px) {
+    background: none;
+  }
+  @include media($small_desktop) {
+    padding: 0 0 137px 0;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  @include media($tablet) {
+    background: url(../img/flower_top_right.png) 511px 0 no-repeat;
+    background-size: 158px;
+    padding: 0 0 80px 0;
+  }
+  @include media(575px) {
+    background-position: 450px 0;
+  }
+  @include media(490px) {
+    background-position: 375px 0;
+  }
+  @include media(400px) {
+    background-position: 305px 0;
+  }
+  @include media($mobile) {
+    background-position: 255px 0;
+    padding: 0 0 40px 0;
+    background-size: 65px;
+    background-position-x: 290px;
+    background-position-y: 30px;
+  }
+  h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 60px 0 40px 0;
+    @include media($tablet) {
+      margin: 33px 0 20px 0;
+    }
+    @include media($mobile) {
+      margin: 23px 0 11px 0;
+    }
+  }
+  .button {
+    margin: 80px auto 0 auto;
+  }
+}
+.wilderness__top {
+  display: flex;
+  gap: 87px;
+  margin-top: 24px;
+  padding-top: 116px;
+  color: $text_color;
+
+  @include media($small_desktop) {
+    margin: 0;
+    padding: 108px 0 0 0;
+    gap: 31px;
+  }
+  @include media($tablet) {
+    padding: 63px 0 0 5px;
+  }
+  @include media($mobile) {
+    padding: 103px 0 0 4px;
+  }
+  .foto {
+    width: 609px;
+    background: url(../img/bamboo-cap.png) center no-repeat;
+
+    @include media($small_desktop) {
+      width: 453px;
+      height: 408px;
+    }
+    @include media($tablet) {
+      display: none;
+    }
+  }
+  .description {
+    color: $text_color;
+    max-width: 455px;
+    p {
+      line-height: 22px;
+      font-size: 16px;
+      line-height: 138%;
+      padding: 0 5px 0 0;
+    }
+  }
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 104%;
+  margin-bottom: 27px;
+  @include media($tablet) {
+    line-height: 116%;
+    margin-bottom: 23px;
+  }
+  @include media($mobile) {
+    font-size: 24px;
+    margin-bottom: 9px;
+    line-height: 27px;
+  }
+}

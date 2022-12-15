@@ -1,0 +1,18 @@
+@import './core/reset';
+
+// abstracts
+@import './abstracts/mixins';
+
+//pages
+@import './pages/donate';
+
+// base переменные
+@import './base/base';
+// layout  ...
+@import './layout/header';
+@import './layout/main';
+@import './layout/footer';
+@import './layout/burger';
+@import './layout/donate';
+@import './layout/main_donate';
+@import './layout/shadow';

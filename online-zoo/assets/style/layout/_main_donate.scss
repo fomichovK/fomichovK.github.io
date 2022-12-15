@@ -1,0 +1,17 @@
+.main_donate {
+  @include media($small_desktop) {
+    height: 472px;
+    background-size: 1500px;
+    background-position: -133px -87px;
+  }
+  @include media($tablet) {
+    height: 368px;
+    background-size: 1330px;
+    background-position: -258px -124px;
+  }
+  @include media($mobile) {
+    height: 220px;
+    background-size: 750px;
+    background-position: -145px -50px;
+  }
+}

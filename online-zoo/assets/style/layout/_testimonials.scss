@@ -1,0 +1,196 @@
+.testimonials {
+  position: relative;
+  background: url(../img/testimonials_bg.png) no-repeat;
+  background-position: bottom right;
+  padding: 140px 0 182px;
+
+  h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 47px;
+    @include media($small_desktop) {
+      margin-bottom: 32px;
+    }
+    @include media($mobile) {
+      font-size: 24px;
+      margin-bottom: 19px;
+    }
+  }
+  @include media($small_desktop) {
+    background: url(../img/testimonials_bg.png) no-repeat;
+    background-position: bottom right;
+    background-size: 125px;
+    padding: 107px 0 142px;
+    gap: 24px;
+  }
+  @include media($tablet) {
+    padding: 64px 0 40px;
+    background: url(../img/testimonials_bg_tablet.png) no-repeat;
+    background-position: bottom right;
+  }
+  @include media($mobile) {
+    padding: 34px 0 30px;
+    background: url(../img/testimonials_bg_mobile.png) no-repeat;
+    background-position: bottom right;
+  }
+}
+.slider {
+  // @include flexBase();
+  // gap: 30px;
+  // &:last-child {
+  //   display: none;
+  // }
+  overflow: hidden;
+  @include media($small_desktop) {
+    // justify-content: center;
+  }
+  @include media($tablet) {
+    // flex-direction: column;
+    gap: 17px;
+  }
+  @include media($mobile) {
+    margin: 0 3px;
+  }
+}
+.feedback {
+  cursor: pointer;
+  position: relative;
+  border-image-slice: 1;
+  border-image-source: $testimonialsGradient;
+  max-width: 268px;
+  border-radius: 20px;
+  color: #767474;
+  background: #f1f3f2;
+  background-clip: padding-box; /* !importanté */
+  border: solid 2px transparent; /* !importanté */
+  padding: 15px 15px 19px 16px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px; /* !importanté */
+    border-radius: inherit; /* !importanté */
+    background: $testimonialsGradient;
+  }
+
+  @include media($small_desktop) {
+    max-width: 293px;
+    padding: 15px 15px 54px 16px;
+  }
+
+  @include media($tablet) {
+    max-width: 100%;
+    padding: 13px 10px 9px 10px;
+  }
+}
+
+.feedback_description {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #767474;
+  @include media($tablet) {
+    height: 34px;
+
+    padding: 0 6px;
+    overflow: hidden;
+  }
+}
+.feedback__header {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.name {
+  font-size: 16px;
+  color: #000;
+  @include media($tablet) {
+    padding-bottom: 5px;
+  }
+}
+.local {
+  font-weight: 300;
+  font-size: 15px;
+  color: #bdbdbd;
+  margin-right: 6px;
+}
+.date {
+  position: relative;
+  padding-left: 10px;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background: #bdbdbd;
+  }
+}
+.progressBar {
+  cursor: pointer;
+  width: 599px;
+  height: 8px;
+  position: relative;
+  // border-image-slice: 1;
+  // border-image-source: $testimonialsGradient;
+  border-radius: 5px;
+  color: #767474;
+  background: #fff;
+  background-clip: padding-box; /* !importanté */
+  border: solid 2px transparent; /* !importanté */
+  border-radius: 1em;
+  margin: 21px auto 31px auto;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px; /* !importanté */
+    border-radius: inherit; /* !importanté */
+    background: $testimonialsGradient;
+  }
+  .swiper-scrollbar-drag {
+    background: #fe9013;
+    border-radius: 5px;
+    width: 30%;
+    height: 100%;
+    @include media($small_desktop) {
+      width: 18%;
+    }
+  }
+
+  @include media($small_desktop) {
+    width: 390px;
+    margin: 21px auto 55px auto;
+  }
+  @include media($tablet) {
+    display: none;
+  }
+}
+.testimonials_button {
+  border-radius: 5px;
+
+  @include media($tablet) {
+    margin: 40px auto;
+  }
+  @include media($tablet) {
+    margin: 44px auto;
+    max-width: 240px;
+  }
+  @include media($mobile) {
+    margin: 35px auto;
+  }
+}

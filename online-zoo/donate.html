@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/donate.css" />
+    <link rel="stylesheet" href="./assets/fonts/style.css" />
+    <title>online-zoo</title>
+  </head>
+  <body>
+    <section class="main main_donate">
+      <header>
+        <div class="shadow"></div>
+        <div class="wrapper">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./assets/img/logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="nav header_nav">
+            <nav class="menu">
+              <div class="nav_logo">
+                <a href="./index.html"><img src="./assets/img/nav_logo.png" /></a>
+              </div>
+              <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="#">Map</a></li>
+                <li><a href="#">Zoos</a></li>
+                <li class="activ"><a href="./donate.html">Donate</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </nav>
+            <div class="autor">
+              <a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks"
+                >Designed by &copy;</a
+              >
+            </div>
+          </div>
+          <div class="burger">
+            <div class="burger-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
+    <!-- donate -->
+    <div class="donate">
+      <div class="wrapper wrapper_donate">
+        <h2>THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</h2>
+        <p>
+          Even though the Zoo has been able to reopen, we are at a greatly reduced capacity with
+          educational programs and public and private events cancelled or postponed for additional
+          months. We need you now more than ever to help ensure that we overcome these challenges.
+          We have been actively raising funds in the community, and we are grateful for the
+          generosity. But much more support is still needed, and we need your help! Please consider
+          a gift today – no matter what size – to help us sustain our mission.
+        </p>
+        <section class="feedFriend">
+          <div class="feedFriend__title">Donation Information</div>
+          <div class="feedFriend__body">
+            <h3>Pick and feed a friend</h3>
+            <p>We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
+            <div class="countAnimal">
+              <div class="count">
+                4
+                <p>Panda diet for the day.</p>
+              </div>
+              <div class="animalImg">
+                <img src="./assets/img/panda.png" alt="panda" />
+              </div>
+            </div>
+            <div class="amount">
+              <p>Amount</p>
+              <div class="donateSumm">
+                <div class="scale">
+                  <div class="line"></div>
+
+                  <form action="#" id="donate_sum">
+                    <div class="zone">
+                      <input name="donate_scale" type="radio" id="_5000" value="5000" />
+                      <label for="_5000">$5000</label>
+                    </div>
+                    <div class="zone">
+                      <input name="donate_scale" type="radio" id="_2000" value="2000" />
+                      <label for="_2000">$2000</label>
+                    </div>
+                    <div class="zone">
+                      <input name="donate_scale" type="radio" id="_1000" value="1000" />
+                      <label for="_1000">$1000</label>
+                    </div>
+                    <div class="zone">
+                      <input name="donate_scale" type="radio" id="_500" value="500" />
+                      <label for="_500">$500</label>
+                    </div>
+                    <div class="zone">
+                      <input name="donate_scale" type="radio" id="_250" value="250" />
+                      <label for="_250">$250</label>
+                    </div>
+                    <div class="zone">
+                      <input name="donate_scale" type="radio" id="_100" value="100" checked />
+                      <label for="_100">$100</label>
+                    </div>
+                    <div class="zone">
+                      <input name="donate_scale" type="radio" id="_50" value="50" />
+                      <label for="_50">$50</label>
+                    </div>
+                    <div class="zone">
+                      <input name="donate_scale" type="radio" id="_25" value="25" />
+                      <label for="_25">$25</label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="anotherAmount">
+              <div class="anotherInput">
+                <input
+                  id="input_donate"
+                  type="number"
+                  placeholder="Another amount"
+                  onkeypress="this.value=this.value.substring(0,3);"
+                  value=""
+                />
+              </div>
+
+              <div class="amountRadio">
+                <div>
+                  <input name="donate" type="radio" id="monthly" />
+                  <label for="monthly">Monthly</label>
+                </div>
+                <div>
+                  <input name="donate" type="radio" id="once" checked />
+                  <label for="once">Once</label>
+                </div>
+              </div>
+            </div>
+            <a href="" class="button">Feed a friend now</a>
+            <p class="pBottom">Share with your friends on social networks</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="wrapper footer_wrapper donate_footer_wrapper">
+        <div class="footer_left_bar">
+          <a class="footer_logo" href="./index.html"
+            ><img src="./assets/img/logo.png" alt="logo"
+          /></a>
+          <a class="footer_logo_mobile" href="./index.html"
+            ><img src="./assets/img/logo_footer.png" alt="logo"
+          /></a>
+
+          <a class="button footer_button" href="./donate.html">donate for volunteers</a>
+          <div class="social">
+            <div class="icon">
+              <a href="https://www.facebook.com/"> <i class="icon-fb"></i><span>Facebook</span></a>
+            </div>
+            <div class="icon">
+              <a href="https://twitter.com"><i class="icon-tw"></i><span>Twitter</span></a>
+            </div>
+            <div class="icon">
+              <a href="https://www.instagram.com/"><i class="icon-in"></i><span>Instagram</span></a>
+            </div>
+            <div class="icon">
+              <a href="https://www.youtube.com/"><i class="icon-you"></i><span>YouTube</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav footer_nav">
+          <nav class="menu">
+            <div class="nav_logo">
+              <a href="./index.html"><img src="./assets/img/nav_logo.png" /></a>
+            </div>
+            <ul>
+              <li><a href="index.html">About</a></li>
+              <li><a href="#">Map</a></li>
+              <li><a href="#">Zoos</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="subscribe subscribe_donate">
+          <form action="#" class="form form_donate">
+            <h3>Subscribe to our news</h3>
+            <input class="emailInput" type="email" placeholder="Enter your email" />
+            <button class="submitInput" type="submit">Submit</button>
+          </form>
+          <div class="disign disign_donate">
+            <p>Designed by Alisa Samborskaya&nbsp;&nbsp;</p>
+            <p>©RSSchool & ©Yem Digital 2021</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./donate.js"></script>
+  </body>
+</html>

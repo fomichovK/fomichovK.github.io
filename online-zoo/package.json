@@ -1,0 +1,12 @@
+{
+  "name": "online-zoo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch ./assets/style/donate.scss ./assets/style/donate.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

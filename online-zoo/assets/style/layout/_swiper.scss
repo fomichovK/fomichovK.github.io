@@ -1,0 +1,35 @@
+.swiper {
+  width: 100%;
+}
+// .swiper-wrapper {
+//   @include media(640px) {
+//     display: block;
+//   }
+// }
+// .pets_wrapper {
+//   .swiper-slide {
+//     @include media(640px) {
+//       margin-bottom: 30px;
+//       &:nth-last-child(-n + 2) {
+//         display: none;
+//       }
+//     }
+//   }
+// }
+
+.swiperTestimonials {
+  .swiper-slide {
+    @include media(640px) {
+      margin-bottom: 30px;
+      &:nth-last-child(-n + 4) {
+        display: none;
+      }
+    }
+  }
+  .swiper-wrapper {
+    @include media(640px) {
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+  }
+}

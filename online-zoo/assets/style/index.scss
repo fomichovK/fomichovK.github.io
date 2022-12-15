@@ -1,0 +1,24 @@
+// core сбросы ...
+@import './core/reset';
+
+// abstracts
+@import './abstracts/mixins';
+
+//pages
+@import './pages/home';
+
+// base переменные
+@import './base/base';
+
+// layout  ...
+@import './layout/header';
+@import './layout/main';
+@import './layout/wilderness';
+@import './layout/pets';
+@import './layout/help';
+@import './layout/testimonials';
+@import './layout/footer';
+@import './layout/burger';
+@import './layout/shadow';
+@import './layout/swiper';
+@import './layout/popUp';

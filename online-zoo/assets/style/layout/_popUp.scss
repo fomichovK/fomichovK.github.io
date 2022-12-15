@@ -1,0 +1,70 @@
+.shadow {
+  position: fixed;
+}
+.popUp_shadow {
+  background: $color_dark;
+
+  opacity: 0.3;
+  width: 100%;
+}
+
+.feedback_popUp {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 40%;
+  z-index: 4;
+  padding: 20px 36px 17px 17px;
+}
+
+.popUp_visible {
+  display: block;
+  @include media($tablet) {
+    left: 3px;
+  }
+  @include media($mobile) {
+    width: 100%;
+    left: 0px;
+  }
+}
+.popUp_close {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  font-size: 25px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+
+  span {
+    position: absolute;
+    background: $color_hover;
+    width: 20px;
+    padding: 1px;
+    transform: rotate(45deg);
+    &:last-child {
+      transform: rotate(-45deg);
+    }
+  }
+}
+.popUp_desc {
+  @include media($tablet) {
+    height: 100%;
+  }
+}
+
+.popUp_feedback {
+}
+
+.feedback__header {
+}
+.fb_header_info {
+}
+.name {
+}
+.local {
+}
+.date {
+}
+.feedback_description {
+}

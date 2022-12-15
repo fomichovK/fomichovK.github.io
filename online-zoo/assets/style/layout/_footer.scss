@@ -1,0 +1,250 @@
+footer {
+  position: relative;
+  background: #111115;
+  padding: 41px 0 50px 0;
+  .footer_logo_mobile {
+    display: none;
+  }
+
+  .footer_button {
+    margin: 68px 0 44px 0;
+    border-radius: 5px;
+
+    @include media($tablet) {
+      margin: 32px 0 60px 0;
+    }
+    @include media($mobile) {
+      order: 2;
+      margin: 8px 0 21px 0;
+    }
+  }
+  @include media($tablet) {
+    padding: 12px 20px;
+  }
+  @include media($mobile) {
+    padding: 17px 8px;
+    .footer_logo {
+      display: none;
+    }
+    .footer_logo_mobile {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  @include media($small_desktop) {
+    margin: 0 45px;
+  }
+  @include media($tablet) {
+    margin: 0;
+    display: block;
+  }
+}
+
+.footer_left_bar {
+  display: flex;
+  flex-direction: column;
+}
+.social {
+  @include media($small_desktop) {
+    margin: 0 0 0 6px;
+  }
+  @include media($tablet) {
+    position: absolute;
+    right: 8px;
+  }
+  @include media(380px) {
+    position: static;
+    order: 1;
+  }
+  @include media($mobile) {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-left: 13px;
+    margin-top: 29px;
+  }
+}
+
+.icon {
+  margin: 10px 0 20px;
+  font-weight: 400;
+  font-size: 16px;
+  &:hover {
+    a,
+    span {
+      color: $color_activLink;
+    }
+    i:after {
+      background: $color_activLink;
+    }
+  }
+  a {
+    display: flex;
+    align-items: center;
+  }
+  i {
+    position: relative;
+    margin-right: 18px;
+    font-size: 16px;
+    z-index: 2;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      top: calc(50% - 13px);
+      left: calc(50% - 13px);
+      z-index: -1;
+      background-color: $color_gray;
+    }
+  }
+  // @include media($small_desktop) {
+  //   margin: 10px 0 20px;
+  // }
+  @include media($tablet) {
+    margin: 4px 0 30px 0;
+
+    span {
+      display: none;
+    }
+  }
+}
+
+.logo {
+  width: 82px;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-end; */
+  /* align-self: flex-end; */
+  justify-content: space-between;
+  @include media(1095px) {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    align-self: flex-end;
+  }
+  h3 {
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 14px;
+    color: #fff;
+  }
+}
+.form {
+  @include media(1095px) {
+    position: absolute;
+    width: 366px;
+    right: 50px;
+    top: 46px;
+  }
+  @include media(740px) {
+    display: none;
+  }
+}
+.emailInput {
+  border: 1px solid $color_hover;
+  padding: 10px;
+  width: 228px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #bdbdbd;
+  background: transparent;
+}
+.submitInput {
+  padding: 10px 39px;
+  border-radius: 5px;
+  margin-left: 10px;
+  &:active {
+    color: #4b9200;
+    border: 1px solid #4b9200;
+  }
+  @include media($small_desktop) {
+    margin-left: 2px;
+    font-size: 16px;
+  }
+}
+.default {
+  border: 1px solid #000;
+}
+.mistake {
+  border: 1px solid red;
+  color: red;
+}
+.disign {
+  text-align: right;
+  font-weight: 100;
+  font-size: 16px;
+  color: #fff;
+  line-height: 25px;
+  margin-bottom: 8px;
+  @include media($small_desktop) {
+    line-height: 30px;
+    margin-bottom: 10px;
+    margin-right: -28px;
+  }
+  @include media($tablet) {
+    margin-top: 6px;
+    margin-right: 0px;
+  }
+  @include media(570px) {
+    margin-bottom: 40px;
+  }
+  @include media($mobile) {
+    margin-bottom: 55px;
+    font-size: 15px;
+  }
+}
+
+footer {
+  .footer_nav {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    align-self: flex-end;
+    color: #fff;
+    margin-bottom: 10px;
+    ul {
+      li {
+        @include media($tablet) {
+          margin: 0;
+        }
+      }
+      @include media(1095px) {
+        gap: 48px;
+        flex-wrap: 0;
+      }
+      @include media(935px) {
+        gap: 15px;
+      }
+      @include media($tablet) {
+        flex-flow: wrap;
+        gap: 36px;
+      }
+      @include media($mobile) {
+        gap: 30px;
+      }
+    }
+    @include media($small_desktop) {
+      position: absolute;
+      left: 335px;
+      bottom: 58px;
+    }
+    @include media($tablet) {
+      position: absolute;
+      left: 22px;
+      bottom: 18px;
+    }
+    @include media($tablet) {
+      left: 19px;
+      bottom: 20px;
+    }
+  }
+}
