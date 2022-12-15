@@ -1,0 +1,29 @@
+.stageList {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  @media screen and (max-width: 720px) {
+    font-size: 14px;
+    flex-wrap: wrap;
+  }
+}
+
+.stage {
+  display: block;
+  text-align: center;
+  border-left: 1px solid #5e5d5d;
+  border-right: 1px solid #5e5d5d;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  @media screen and (max-width: 720px) {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+}
+.stage-activ {
+  background: $activeColor;
+}

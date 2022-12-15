@@ -1,0 +1,11 @@
+.header {
+  @media screen and (max-width: $tablet) {
+    justify-content: space-around;
+  }
+}
+.logo {
+  width: 80px;
+}
+.score {
+  font-size: 20px;
+}

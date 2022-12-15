@@ -1,0 +1,36 @@
+.birds-question {
+  min-height: 300px;
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+  }
+}
+.bird-img {
+  margin: 0 auto;
+  height: 200px;
+  text-align: center;
+
+  transition: 1s;
+  @media screen and (max-width: $tablet) {
+    margin: 25px auto;
+    height: auto;
+    max-width: 210px;
+  }
+  @media screen and (max-width: $mobile) {
+    max-width: 110px;
+    margin: 10px auto;
+  }
+  .image {
+    @media screen and (max-width: $tablet) {
+      height: auto;
+      width: 100%;
+    }
+  }
+}
+.audio-player {
+  audio {
+    width: 90%;
+  }
+  @media screen and (max-width: $tablet) {
+    width: 300px;
+  }
+}

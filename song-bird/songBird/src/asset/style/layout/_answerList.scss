@@ -1,0 +1,35 @@
+.answer-list {
+  @media screen and (max-width: $tablet) {
+    justify-content: center;
+    padding: 20px 0;
+  }
+}
+
+.answer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  @media screen and (max-width: $tablet) {
+    flex-wrap: wrap;
+    width: 310px;
+  }
+}
+.bird-item {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-left: 1px solid $bodyBgColor;
+  border-right: 1px solid $bodyBgColor;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 18px;
+  text-transform: uppercase;
+  &:hover {
+    background-color: $bodyBgColor;
+  }
+  @media screen and (max-width: $tablet) {
+    border: 1px solid $bodyBgColor;
+  }
+}

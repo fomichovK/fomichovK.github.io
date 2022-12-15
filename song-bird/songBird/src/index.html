@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/x-icon" href="../public/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Song Bird</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="section header">
+        <div class="logo">
+          <a href="https://rs.school/js/">
+            <img src="./asset/img/logo.svg" alt="logo" />
+          </a>
+        </div>
+
+        <div class="score">Score: <span class="score-count">0</span></div>
+      </header>
+      <main>
+        <section class="section">
+          <ul class="stageList"></ul>
+        </section>
+        <section class="section birds-question">
+          <div class="bird-img">
+            <img class="image" src="./asset/img/gid.jpg" alt="bird" />
+          </div>
+          <div class="description">
+            <h3 class="bird-name">
+              **** <br />
+              Угадай исполнителя
+            </h3>
+            <div class="bird-description"></div>
+            <div class="audio-player">
+              <div class="play-stop"><span class="icon-play2"></span></div>
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+
+              <div class="volume-container">
+                <span class="icon-volume"></span>
+                <div class="volume">
+                  <div class="volume-bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section answer-list">
+          <ul class="answer"></ul>
+        </section>
+        <section class="section button-next">
+          <button class="next" disabled="true">next</button>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

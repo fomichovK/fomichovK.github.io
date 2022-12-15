@@ -1,0 +1,59 @@
+.audio-player {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  @media screen and (max-width: $tablet) {
+    margin: 15px 0;
+  }
+}
+.icon-volume,
+.play-stop {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  color: #bababa;
+}
+.progress {
+  cursor: pointer;
+  width: 400px;
+  height: 5px;
+  background: #bababa;
+  border-radius: 10px;
+  transition: 0.3s;
+  //   border: 1px solid black;
+  @media screen and (max-width: 800px) {
+    width: 200px;
+  }
+}
+.progress-bar {
+  width: 0;
+  height: 100%;
+  background: #636363;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.volume-container {
+  display: flex;
+  align-items: center;
+}
+.icon-volume {
+  font-size: 18px;
+}
+
+.volume {
+  cursor: pointer;
+  width: 70px;
+  height: 7px;
+  border: 1px solid #bababa;
+  background: #bababa;
+  border-radius: 10px;
+  transition: 0.3s;
+  margin: 0 0 0 3px;
+}
+.volume-bar {
+  height: 100%;
+  background: #636363;
+  border-radius: 10px;
+  transition: 0.3s;
+}
