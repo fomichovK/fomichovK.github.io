@@ -47,18 +47,18 @@ _11.2017_ IT-School “Ukranian IT Scool”, Kharkov
 
 _Pet project online store. Used technologies:React, Redux toolkit, Type Script (at the development stage)._
 
-https://pizza-fomichovk.vercel.app/  
-https://github.com/fomichovK/react-pizza
+[https://pizza-fomichovk.vercel.app/](https://pizza-fomichovk.vercel.app/)  
+[https://github.com/fomichovK/react-pizza](https://github.com/fomichovK/react-pizza)
 
 _Landing page. Used technologies: HTML, Css (FlexBox, Bootstrap …), Java Script._
 
-(https://fomichovk.github.io/song-bird/songBird/build)
-(https://fomichovk.github.io/game-rules)
-(https://fomichovk.github.io/online-zoo)
-(https://fomichovk.github.io/mimino)  
-(https://fomichovk.github.io/wapik)  
-(https://fomichovk.github.io/moveup)  
-(https://fomichovk.github.io/limos)
+[https://fomichovk.github.io/song-bird/songBird/build](https://fomichovk.github.io/song-bird/songBird/build)  
+[https://fomichovk.github.io/game-rules](https://fomichovk.github.io/game-rules)  
+[https://fomichovk.github.io/online-zoo](https://fomichovk.github.io/online-zoo)  
+[https://fomichovk.github.io/mimino](https://fomichovk.github.io/mimino)  
+[https://fomichovk.github.io/wapik](https://fomichovk.github.io/wapik)  
+[https://fomichovk.github.io/moveup](https://fomichovk.github.io/moveup)  
+[https://fomichovk.github.io/limos](https://fomichovk.github.io/limos)
 
 
 **Languages**
