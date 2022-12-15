@@ -1,0 +1,21 @@
+{
+  "name": "fomichovk-jsfe2022q3",
+  "version": "1.0.0",
+  "description": "# Junior FrontEnd Development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch ./src/scss/style.scss ./src/style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolling-scopes-school/fomichovk-JSFE2022Q3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolling-scopes-school/fomichovk-JSFE2022Q3/issues"
+  },
+  "homepage": "https://github.com/rolling-scopes-school/fomichovk-JSFE2022Q3#readme"
+}
