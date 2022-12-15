@@ -52,10 +52,14 @@ https://github.com/fomichovK/react-pizza
 
 _Landing page. Used technologies: HTML, Css (FlexBox, Bootstrap …), Java Script._
 
-https://fomichovk.github.io/mimino/  
-https://fomichovk.github.io/wapik/  
-https://fomichovk.github.io/moveup/  
-https://fomichovk.github.io/limos/
+(https://fomichovk.github.io/song-bird/songBird/build)
+(https://fomichovk.github.io/game-rules)
+(https://fomichovk.github.io/online-zoo)
+(https://fomichovk.github.io/mimino)  
+(https://fomichovk.github.io/wapik)  
+(https://fomichovk.github.io/moveup)  
+(https://fomichovk.github.io/limos)
+
 
 **Languages**
 
