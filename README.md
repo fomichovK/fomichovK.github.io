@@ -8,7 +8,7 @@
 **Phone:** +380(068) 61 00 018, +38(066) 425 22 23  
 **Skype:** zloi_kot  
 **E-mail:** fomichkostja@gmail.com  
-[Linkedin](https://www.linkedin.com/in/константин-фомичев-33b51a180)
+[Linkedin](https://www.linkedin.com/in/konstantin-fomichov-33b51a180)
 
 ## About my self
 
