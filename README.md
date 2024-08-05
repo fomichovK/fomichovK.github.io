@@ -21,8 +21,6 @@
 - HTML
 - Css (FlexBox, Bootstrap …)
 - Java Script
-- React
-- Redux toolkit
 - Type Script (in the process of studying)
 - Sass
 - Avocode
@@ -30,6 +28,8 @@
 - Photoshop
 - experience with Linux
 - Parcel (collector of projects)
+- Java SE
+- Selenium Web Driver
 
 **Education:**
 
